@@ -14,6 +14,8 @@ inside <directory_name> in <file_name> -- specifies the exact repository and fil
 directory structure {
 
 studyapp / 
+	index.html
+
 	backend /
 	
 		login.cpp
@@ -27,7 +29,6 @@ studyapp /
 
 	landingpage /
 		
-		index.html 
 		main.html
 		animations /
 			main.css
@@ -119,6 +120,9 @@ created main.html dashboard displaying 5 modules:
 }
 inside backend in login.cpp {
 updated and compiled login.cpp to insert registered student credentials into MongoDB database using mongosh and persist to database/users.json
+}
+inside studyapp {
+added index.html to main root directory instead of landingpage and updated all relative asset and navigation links accordingly
 }
 )
 

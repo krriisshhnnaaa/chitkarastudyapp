@@ -31,8 +31,10 @@ function initDatabase() {
     }
   }
 
-  // Also attempt to fetch latest database/users.json if hosted on web server
-  fetch('../../database/users.json')
+  // Attempt to fetch latest database/users.json
+  const isInsideLanding = window.location.pathname.includes('/landingpage/');
+  const dbPath = isInsideLanding ? '../../database/users.json' : 'database/users.json';
+  fetch(dbPath)
     .then(res => res.json())
     .then(dbUsers => {
       if (Array.isArray(dbUsers)) {
@@ -136,7 +138,8 @@ function setupAuthForm() {
           loginTime: new Date().toISOString()
         }));
 
-        window.location.href = 'main.html';
+        const isInsideLandingPage = window.location.pathname.includes('/landingpage/');
+        window.location.href = isInsideLandingPage ? 'main.html' : 'landingpage/main.html';
       }
     }
   });

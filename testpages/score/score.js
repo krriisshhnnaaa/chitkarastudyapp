@@ -80,7 +80,7 @@ function renderScoreView(testNumber) {
     nextBtn.href = `../test${testNumber + 1}/test.html`;
     nextBtn.textContent = `Proceed to TEST-${testNumber + 1}`;
   } else {
-    nextBtn.href = '../../landingpage/index.html';
+    nextBtn.href = '../../index.html';
     nextBtn.textContent = 'Complete & Return Home';
   }
 
