@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chitkara University Practice Tests - Student Login</title>
+  <link rel="stylesheet" href="animations/main.css">
+  <link rel="stylesheet" href="animations/backgrounds.css">
+  <link rel="stylesheet" href="animations/loginhero.css">
+</head>
+<body>
+
+  <!-- Ambient Dynamic Background -->
+  <div class="background-canvas"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Marquee Banner -->
+  <header class="marquee-container" role="banner">
+    <div class="marquee-content">
+      ★ CHITKARA UNIVERSITY PRACTICE TESTS ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      ★ CHITKARA UNIVERSITY PRACTICE TESTS ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      ★ CHITKARA UNIVERSITY PRACTICE TESTS ★
+    </div>
+  </header>
+
+  <!-- Main Hero / Login Area -->
+  <main class="page-wrapper">
+    <div class="login-card">
+      <div class="brand-header">
+        <span class="brand-badge">Assessment Portal</span>
+        <h1 class="brand-title" id="formHeading">Student Login</h1>
+        <p class="brand-subtitle" id="formSubheading">Authenticate to access Introduction to Web Technologies practice tests</p>
+      </div>
+
+      <!-- Auth Mode Switcher -->
+      <div class="auth-tabs" role="tablist">
+        <button type="button" class="tab-btn active" id="tabLogin" onclick="switchAuthMode('login')">Log In</button>
+        <button type="button" class="tab-btn" id="tabSignup" onclick="switchAuthMode('signup')">Sign Up</button>
+      </div>
+
+      <form id="authForm" novalidate>
+        <div class="form-group">
+          <label class="form-label" for="userName">Full Name</label>
+          <div class="input-container">
+            <input 
+              type="text" 
+              id="userName" 
+              name="name" 
+              class="form-input" 
+              placeholder="e.g. Krishnan G" 
+              autocomplete="name"
+              required 
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="userEmail">Institutional Email</label>
+          <div class="input-container">
+            <input 
+              type="email" 
+              id="userEmail" 
+              name="email" 
+              class="form-input" 
+              placeholder="e.g. krishnang@chitkara.edu.in" 
+              autocomplete="email"
+              required 
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="login-btn" id="submitBtn">
+          Log In &amp; Continue
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Popup Window: User Not Found -->
+  <div id="popupModal" class="popup-modal" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <div class="popup-box">
+      <div class="popup-icon">&#x26A0;</div>
+      <h3 class="popup-title" id="popupTitle">User not found</h3>
+      <p class="popup-message" id="popupMsg">
+        The entered name or email does not match any registered student in the database. Please verify your details or use the <strong>Sign Up</strong> tab to register.
+      </p>
+      <button type="button" class="popup-btn" onclick="closePopup()">Dismiss</button>
+    </div>
+  </div>
+
+  <footer class="footer-note">
+    &copy; 2026 Chitkara University &bull; Practice Test Evaluation System
+  </footer>
+
+  <script src="interactions/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+:root {
+  --primary-color: #d32f2f;
+  --primary-hover: #b71c1c;
+  --primary-glow: rgba(211, 47, 47, 0.25);
+  --accent-color: #ff5252;
+  --bg-dark: #0f1117;
+  --card-bg: #161b22;
+  --card-border: #30363d;
+  --text-main: #f0f6fc;
+  --text-muted: #8b949e;
+  --success-color: #238636;
+  --success-bg: rgba(35, 134, 54, 0.15);
+  --danger-color: #f85149;
+  --danger-bg: rgba(248, 81, 73, 0.15);
+  --font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding-bottom: 60px;
+}
+
+.score-header-bar {
+  background: rgba(22, 27, 34, 0.95);
+  border-bottom: 1px solid var(--card-border);
+  padding: 1.25rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(10px);
+}
+
+.score-header-bar h1 {
+  font-size: 1.3rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.score-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Hero Score Card */
+.score-hero-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.score-hero-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #d32f2f, #ff5252, #d32f2f);
+}
+
+.score-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.badge-passed {
+  background: var(--success-bg);
+  color: #3fb950;
+  border: 1px solid rgba(63, 185, 80, 0.4);
+}
+
+.badge-retry {
+  background: var(--danger-bg);
+  color: var(--accent-color);
+  border: 1px solid rgba(255, 82, 82, 0.4);
+}
+
+.score-digits {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0.5rem 0;
+}
+
+.score-digits span {
+  color: var(--text-muted);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.score-percentage {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.score-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--card-border);
+}
+
+.meta-box {
+  background: rgba(13, 17, 23, 0.7);
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid var(--card-border);
+}
+
+.meta-label {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.meta-val {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  margin-top: 0.25rem;
+}
+
+.score-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn-action {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-hover);
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--card-border);
+  color: var(--text-main);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Breakdown Section */
+.breakdown-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.review-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #8b949e;
+}
+
+.review-card.correct {
+  border-left-color: var(--success-color);
+}
+
+.review-card.incorrect {
+  border-left-color: var(--danger-color);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+}
+
+.review-qnum {
+  font-weight: 700;
+  color: #fff;
+}
+
+.review-status-tag {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+}
+
+.tag-correct {
+  background: var(--success-bg);
+  color: #3fb950;
+}
+
+.tag-incorrect {
+  background: var(--danger-bg);
+  color: #f85149;
+}
+
+.review-qtext {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: var(--text-main);
+}
+
+.review-answers {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+  background: rgba(13, 17, 23, 0.6);
+  padding: 0.65rem 1rem;
+  border-radius: 6px;
+}
+
+.ans-col strong {
+  color: var(--text-muted);
+}

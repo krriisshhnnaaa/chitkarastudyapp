@@ -1,0 +1,127 @@
+antigravity instructions for studyapp repository
+
+action NOW () -- between these parenthesis after action NOW () are instructions to be executed
+
+action DONE () -- between these parenthesis after action DONE () are instructions that have been executed for context of what work has been done in the repository
+
+directory structure {} -- between these curly brackets after directory structure is how the directory structure, folders , files , etc are defined 
+
+inside <directory_name> in <file_name> -- specifies the exact repository and file to be worked on
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+directory structure {
+
+studyapp / 
+	backend /
+	
+		login.cpp
+		makeleaderboard.cpp
+		signup.css	
+
+	database /
+		
+
+	workingpart / 
+
+	landingpage /
+		
+		index.html 
+		main.html
+		animations /
+			main.css
+			backgrounds.css
+			loginhero.css
+
+		interactions /
+			
+
+
+	testpages /
+		test1 /
+			test.html
+			test.css
+			test.js
+		test2 /
+			test.html
+			test.css
+			test.js
+		test3 /
+			test.html
+			test.css
+			test.js		
+		test4 / 
+			test.html
+			test.css
+			test.js
+		test5 /
+			test.html
+			test.css
+			test.js
+		test6 /
+			test.html
+			test.css
+			test.js
+
+		score /
+			score.html
+			score.css
+			score.js
+
+
+}
+
+
+
+
+
+action DONE (
+inside studyapp {
+ensured all files and directories match the defined directory structure:
+- backend (login.cpp, makeleaderboard.cpp, signup.css, score.cpp, score executable, answer_file1.json through answer_file5.json)
+- database
+- workingpart
+- landingpage (index.html, animations/main.css, animations/backgrounds.css, animations/loginhero.css, interactions/login.js)
+- testpages (test1 through test6 each containing test.html, test.css, test.js; score containing score.html, score.css, score.js)
+}
+inside landingpage in index.html {
+created HTML webpage allowing user login with name and email, and marquee text "CHITKARA UNIVERSITY PRACTICE TESTS"
+}
+inside landingpage inside animations in {
+created and styled main.css, backgrounds.css, and loginhero.css for ambient dark theme, smooth marquee animation, and responsive login card
+}
+inside backend inside score.cpp {
+created and compiled score.cpp to evaluate response.json against answer_file1.json through answer_file5.json; computes marks (+1 for correct, unchanged for incorrect) and outputs score breakdown and summary
+}
+inside testpages inside test1 test2 test3 test4 test5 {
+created test.html, test.css, and test.js for test1 through test5:
+- H1: Introduction To Web Technologies TEST-X
+- q1 - q26 populated with text and options from questions.txt
+- Formatted as question X : question text with options (a), (b), (c), (d)
+- test.js handles real-time response capture, localStorage persistence, and submitting structured JSON to backend and redirecting to score/score.html
+}
+inside testpages inside score {
+created score.html, score.css, and score.js to calculate marks, display pass/needs practice status, question-by-question review, and download response.json
+}
+inside landingpage in index.html {
+implemented authentication logic:
+- on login: checks credentials against database; if not matched displays popup window "User not found"; if matched redirects to main.html
+- on sign up: accepts name and email, saves to local database and triggers MongoDB insertion via login.cpp
+}
+inside landingpage in main.html {
+created main.html dashboard displaying 5 modules:
+- hero1: attempt IWT test 1 ? (onClick directs to test1/test.html)
+- hero2: attempt IWT test 2 ? (onClick directs to test2/test.html)
+- hero3: attempt IWT test 3 ? (onClick directs to test3/test.html)
+- hero4: attempt IWT test 4 ? (onClick directs to test4/test.html)
+- hero5: attempt IWT test 5 ? (onClick directs to test5/test.html)
+}
+inside backend in login.cpp {
+updated and compiled login.cpp to insert registered student credentials into MongoDB database using mongosh and persist to database/users.json
+}
+)
+
+actionNOW (
+
+)

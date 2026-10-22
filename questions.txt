@@ -1,0 +1,779 @@
+1. A university website displays the same course handbook to every visitor. The administrator updates the HTML file manually whenever regulations change. Which classification best fits the site?
+A. Dynamic, because it is hosted on a server
+B. Static, because the delivered content is maintained as files
+C. Dynamic, because browsers interpret HTML
+D. A web application, because it contains text
+
+2. A shopping website shows each visitor a cart total based on items selected during the session. Which capability most directly makes this behavior dynamic?
+A. The use of a domain name
+B. The existence of an HTML document
+C. Runtime processing of user-specific state
+D. The use of HTTPS alone
+
+3. A student says the World Wide Web and the Internet are identical because both use computers connected globally. Which correction is most accurate?
+A. The Internet is a global network infrastructure; the Web is a service that uses it
+B. The Web is the physical network, while the Internet is a browser
+C. The Internet contains only websites, while the Web contains email
+D. They are identical technical terms
+
+4. A browser requests a page from a server, but the server sends only HTML and the browser builds the visible layout. Which task is primarily client-side?
+A. Resolving the domain through DNS
+B. Rendering the received HTML and CSS
+C. Assigning the server a public IP address
+D. Storing the authoritative DNS zone
+
+5. A company keeps database credentials in JavaScript sent to every browser. Why is this architecture unsafe?
+A. JavaScript cannot make network requests
+B. Browser code is visible to users and secrets can be extracted
+C. Databases can only be accessed through HTML forms
+D. HTTPS automatically hides code from the user
+
+6. A site uses HTML, CSS, and JavaScript for its interface and Python to validate orders and query a database. Which mapping is correct?
+A. Python is frontend because it runs first
+B. HTML is backend because it structures data
+C. HTML/CSS/JavaScript are frontend; Python is backend
+D. All components are backend because they use a server
+
+7. A browser displays a cached page even though the origin server is temporarily unavailable. Which conclusion is safest?
+A. Every web page is stored permanently in DNS
+B. A cache may provide a previously stored response
+C. The server has no role in web delivery
+D. HTTPS guarantees offline access
+
+8. A developer needs to inspect which CSS rule overrides another and identify the element's computed dimensions. Which browser tool is most appropriate?
+A. Elements/Inspector panel
+B. DNS lookup panel
+C. Domain registrar console
+D. Web-hosting billing dashboard
+
+9. A page's button appears to do nothing. The developer wants to check JavaScript errors and log output. Which tool should be checked first?
+A. Network tab only
+B. Console
+C. Address bar history
+D. DNS root server
+
+10. A page loads its text but not its product images. The developer wants to identify failed image requests and response codes. Which tool is most directly useful?
+A. Network panel
+B. Elements panel only
+C. View Source only
+D. Bookmark manager
+
+11. A developer changes CSS locally in DevTools and sees the result, but refreshing removes the change. Why?
+A. DevTools edits are generally temporary unless saved back to source
+B. CSS changes cannot affect rendered pages
+C. Browsers do not support CSS editing
+D. HTTPS prevents local changes
+
+12. A user enters https://shop.example.com/products?id=7#reviews. Which part is the fragment?
+A. https
+B. shop.example.com
+C. ?id=7
+D. #reviews
+
+13. In https://store.example.org:8443/items?sort=price, what does 8443 represent?
+A. Scheme
+B. Port
+C. Query parameter
+D. Top-level domain
+
+14. A URL is https://docs.example.com/guide?lang=en&page=2. Which component contains the query string?
+A. /guide
+B. docs.example.com
+C. ?lang=en&page=2
+D. https://
+
+15. A user types a domain name. Which service normally translates the name into an IP address needed to reach the destination?
+A. DNS
+B. HTML
+C. CSS
+D. SMTP
+
+16. A website's domain registration expires, but its web server remains powered on. What is the most likely immediate consequence for users who rely on that domain?
+A. The server hardware automatically shuts down
+B. The domain may stop resolving or be redirected according to registrar/registry state
+C. HTTPS becomes HTTP for all domains
+D. The HTML files are automatically deleted
+
+17. A company purchases web hosting but has not configured a domain name. Which statement is correct?
+A. Hosting and domain registration are the same product
+B. The site may be reachable by an IP address or provider URL, depending on configuration
+C. A domain is required for any HTTP connection
+D. DNS stores the site's complete HTML files
+
+18. A browser has the correct server IP address but cannot establish a secure connection because the certificate is invalid. Which layer of the user experience is directly affected?
+A. TLS certificate validation for HTTPS
+B. HTML heading hierarchy
+C. Image alt text
+D. DNS root-zone ownership
+
+19. A network administrator says HTTPS means the website itself is trustworthy and cannot contain malicious content. What is the best response?
+A. Correct, encryption proves content is safe
+B. Correct, certificates audit every script
+C. Incorrect; HTTPS protects connection confidentiality/integrity and authenticates the endpoint, not the morality of the content
+D. Incorrect; HTTPS provides no security benefit
+
+20. A browser sends a GET request to retrieve a page. Which statement best describes GET?
+A. It is commonly used to retrieve a representation and should not be designed to change server state
+B. It always encrypts the request body
+C. It guarantees the response is HTML
+D. It deletes the requested resource
+
+21. A login form sends a password in a URL query parameter over HTTPS. Why is this still a poor design?
+A. HTTPS cannot encrypt URLs
+B. URLs can be retained in histories, logs, analytics, or referrer data; sensitive values should not be placed there
+C. Query strings are only allowed for images
+D. Browsers reject all query strings over HTTPS
+
+22. A server successfully processes a request and returns a representation of the resource. Which status-code family normally indicates success?
+A. 1xx
+B. 2xx
+C. 4xx
+D. 5xx
+
+23. A request reaches the server, but the requested page does not exist at that path. Which status is the conventional response?
+A. 200
+B. 301
+C. 404
+D. 503
+
+24. A server returns 500 after an unexpected exception in application code. What does this most directly indicate?
+A. A client-side syntax error in HTML
+B. A server-side failure while processing the request
+C. A successful permanent redirect
+D. A DNS record was necessarily deleted
+
+25. A browser sends an HTTP request and receives a response. Which ordering best represents the normal high-level process?
+A. Response → DNS lookup → request → render
+B. Request → response → browser processes response
+C. Render → response → request
+D. HTML → DNS record → server shutdown
+
+26. A site redirects users from http:// to https://. Which status code can commonly represent a permanent redirect?
+A. 301
+B. 404
+C. 418
+D. 500
+
+27. An API returns JSON with status 200. A student claims 200 means the data must be correct. Why is that conclusion invalid?
+A. 200 only indicates successful HTTP handling, not semantic correctness of every field
+B. JSON cannot be sent over HTTP
+C. 200 means the server returned HTML
+D. Status codes validate database integrity
+
+28. A website uses HTTPS but has mixed-content warnings because it loads a script over HTTP. What is the concern?
+A. The insecure script may be modified in transit and compromise the secure page
+B. HTTP scripts always load faster
+C. DNS stops working when a page contains JavaScript
+D. The page's H1 becomes invalid
+
+29. A browser sends a request containing Host: example.com. Why is the Host information useful when multiple websites share one IP address?
+A. It tells the server which hostname/resource site is being requested
+B. It encrypts the request body
+C. It substitutes for DNS permanently
+D. It guarantees a 200 response
+
+30. A web app is being tested at 320px viewport width. Which DevTools feature best helps evaluate mobile layout behavior?
+A. Device toolbar/responsive design mode
+B. DNS cache flush only
+C. Server access log only
+D. Certificate issuer list
+
+31. A browser sends repeated requests for a file whose response includes a valid cache validator. Which HTTP mechanism can allow the server to reply that the cached representation is still valid?
+A. Conditional request with ETag/If-None-Match
+B. H1 heading
+C. DNS CNAME only
+D. HTML alt attribute
+
+32. A team deploys a new site. Which lifecycle sequence is most sensible?
+A. Maintenance → requirements → testing → design
+B. Requirements/planning → design → implementation → testing → deployment → maintenance
+C. Deployment → requirements → implementation → design
+D. Testing → maintenance → requirements only
+
+33. A feature works on the developer's laptop but fails in production. Which lifecycle activity should have helped identify environment-specific differences before release?
+A. Testing in representative environments
+B. Writing more H1 tags
+C. Registering a second domain only
+D. Removing all server logs
+
+34. A team collects user requirements only after the entire site is deployed. Which risk is most likely?
+A. The delivered product may not meet actual user needs
+B. DNS will become encrypted automatically
+C. All HTML becomes static
+D. Browsers will stop supporting HTTP
+
+35. A page uses a large hero image, many scripts, and render-blocking stylesheets. Users report slow initial display. Which response best fits web performance work?
+A. Measure load behavior in DevTools and optimize critical resources
+B. Add more nested tables
+C. Put the entire page title in the URL fragment
+D. Disable all semantic tags
+
+36. A browser's address bar shows a padlock for a website. What does this generally indicate?
+A. The connection has passed the browser's applicable HTTPS security checks
+B. The website is guaranteed to be factually accurate
+C. The domain is owned by a government
+D. The server has no vulnerabilities
+
+37. A user clicks a link and the browser first needs the IP address for the hostname. Which answer correctly describes DNS's role?
+A. It resolves names to records; it does not normally transmit the page's full content
+B. It renders CSS
+C. It runs backend business logic
+D. It defines HTML semantics
+
+38. A page's HTML includes <title> but no visible H1. Which statement is most accurate?
+A. The title and H1 serve different purposes; a visible main heading can still improve content structure
+B. The page cannot render
+C. The browser automatically converts title into an H1
+D. HTML5 requires every page to have exactly six H1 tags
+
+39. A document begins with <!DOCTYPE html>. What is its primary purpose in modern HTML?
+A. It declares the document as HTML and helps trigger standards mode
+B. It inserts the page title
+C. It connects the domain to DNS
+D. It encrypts page content
+
+40. A developer places visible page content inside <head>. Why is this generally incorrect?
+A. Head is for document metadata and resource references; visible page content belongs in body
+B. Head can contain only JavaScript comments
+C. Body is reserved for CSS
+D. Browsers never parse head elements
+
+41. An HTML document omits <html>, <head>, and <body> tags, yet the browser still displays it. Which explanation is best?
+A. HTML parsers can infer certain omitted tags, but explicit structure is clearer and more robust
+B. HTML requires no document structure
+C. The browser is actually rendering a PDF
+D. The tags are inserted by DNS
+
+42. A developer uses <b> for every important sentence and <strong> only for decoration. Which semantic correction is best?
+A. <strong> conveys strong importance; <b> draws attention without adding the same importance meaning
+B. <b> is a hyperlink and <strong> is a table
+C. They are both obsolete and forbidden
+D. <strong> always changes text to red
+
+43. A paragraph contains a scientific term that needs emphasis in speech, not merely visual italics. Which element is the more semantic choice?
+A. <i>
+B. <em>
+C. <small>
+D. <del>
+
+44. A page uses <i> for a foreign phrase or technical term without intending stress emphasis. Is that necessarily invalid?
+A. Yes; i is forbidden in HTML5
+B. No; i can mark text in an alternate voice or mood, or otherwise set apart from prose
+C. Yes; only images can be inside paragraphs
+D. No; i always means importance
+
+45. A writer needs to show text that was removed from a revised policy and text inserted in its place. Which pair is most suitable?
+A. <del> and <ins>
+B. <small> and <big>
+C. <em> and <i>
+D. <head> and <footer>
+
+46. A page has a main heading, two section headings, and several subsections. Which hierarchy is most appropriate?
+A. Use heading levels to reflect nested section structure rather than choosing levels only by visual size
+B. Use H6 for the main heading because it is smallest
+C. Use headings only to change font size
+D. Replace all headings with bold paragraphs
+
+47. A content editor places an H4 immediately after H1 only because H4 looks smaller. What is the primary issue?
+A. The heading hierarchy may not reflect the logical content structure
+B. H4 cannot appear in body
+C. H1 is only valid in the head
+D. Headings cannot be styled
+
+48. A developer needs a generic container for a short phrase inside a paragraph, with no special semantic meaning. Which element is suitable?
+A. <span>
+B. <article>
+C. <nav>
+D. <main>
+
+49. A developer wraps a self-contained blog post that could be distributed independently. Which semantic element is the best fit?
+A. <article>
+B. <span>
+C. <br>
+D. <title>
+
+50. A page has one central content area and several navigation links. Which element should identify the dominant unique content of the document?
+A. <main>
+B. <aside>
+C. <small>
+D. <mark>
+
+51. A sidebar contains related links and a short note that is tangential to the article. Which element may be appropriate?
+A. <aside>
+B. <main>
+C. <title>
+D. <strong>
+
+52. A page has a group of links used for primary site navigation. Which element best conveys this purpose?
+A. <nav>
+B. <section> for every individual link
+C. <em>
+D. <caption>
+
+53. A developer uses <section> around every inline word to apply CSS. What is the best critique?
+A. section is a thematic grouping, usually with a heading; a span or CSS selector is more appropriate for inline styling
+B. section is the correct inline element
+C. section encrypts text
+D. section can only appear in head
+
+54. A product image conveys information essential to understanding the product. What should its alt text do?
+A. Describe the meaningful information conveyed by the image concisely
+B. Repeat every keyword on the page
+C. Always begin with 'image of image of'
+D. Be omitted for all JPG files
+
+55. A purely decorative border image adds no information. What is the usual accessible alt-text choice if it is represented by an img element?
+A. A long paragraph describing the border
+B. Empty alt text: alt=""
+C. The file's full disk path
+D. The word 'SEO' repeated
+
+56. An image file is named product-final-2.jpg, but the page needs to describe a red running shoe. Which attribute is intended for that textual description?
+A. src
+B. alt
+C. width only
+D. title element
+
+57. A page links to a downloadable PDF. Which attribute provides the destination of an anchor element?
+A. href
+B. alt
+C. lang
+D. charset
+
+58. A link should take users to a section with id="pricing" on the same page. Which href is appropriate?
+A. href="pricing"
+B. href="#pricing"
+C. src="#pricing"
+D. alt="pricing"
+
+59. Two elements in one document use id="contact". What is the main issue?
+A. An id should be unique within the document
+B. Every id must contain a number
+C. IDs are only allowed on images
+D. Duplicate IDs make all HTML invisible by definition
+
+60. A navigation link says 'Click here' repeatedly, with no context. What is the better accessibility and usability approach?
+A. Use descriptive link text that indicates the destination or purpose
+B. Remove all links
+C. Use only URLs as image alt text
+D. Make every link target blank
+
+61. A developer wants a link to open in a new tab using target="_blank". Which additional consideration is appropriate?
+A. Use rel="noopener" where relevant and ensure opening a new tab is useful to users
+B. Add alt to the anchor instead
+C. Put target on the HTML element
+D. Change href to src
+
+62. A page must show a short quotation from another source as a block-level quotation. Which element is most appropriate?
+A. <blockquote>
+B. <strong>
+C. <img>
+D. <thead>
+
+63. A paragraph contains a line break that is part of an address, not a new thematic paragraph. Which element is appropriate?
+A. <br>
+B. <hr>
+C. <article>
+D. <caption>
+
+64. A developer uses multiple <br> elements to create large vertical gaps between sections. What is the better approach?
+A. Use CSS margin or padding for spacing
+B. Replace all with <meta>
+C. Use an empty table
+D. Add more H1 tags
+
+65. A table displays monthly sales, with months as column headers and products as row headers. Which markup improves table semantics?
+A. Use <th> for headers and appropriate scope attributes where useful
+B. Use <b> for all cells
+C. Use images instead of table cells
+D. Use <title> as each header
+
+66. A table's first row contains labels such as Name, Email, and Role. Which element can group these header cells semantically?
+A. <thead>
+B. <tfoot> only
+C. <aside>
+D. <nav>
+
+67. A table has a descriptive title, such as 'Semester Results'. Which element is designed to provide a table caption?
+A. <caption>
+B. <legend>
+C. <label>
+D. <summary>
+
+68. A developer uses a table to position a page's logo, menu, and sidebar. What is the strongest modern HTML critique?
+A. Tables should generally represent tabular data; use CSS layout for page structure
+B. Tables are only valid in the head
+C. Tables cannot contain text
+D. Every layout must use a table
+
+69. A data table has a cell that should span three columns. Which attribute belongs on the relevant td or th?
+A. colspan="3"
+B. rowspan="3"
+C. href="3"
+D. scope="3"
+
+70. A timetable has a 'Morning' label covering two rows. Which attribute can make a header cell span those rows?
+A. rowspan="2"
+B. colspan="2"
+C. alt="2"
+D. lang="2"
+
+71. A developer puts a <tr> directly inside <table> without explicitly writing <tbody>. The browser displays the table. Which explanation is best?
+A. The HTML parser may insert a tbody element in the DOM
+B. tr is not valid in a table
+C. The browser converts the row to a paragraph
+D. The browser ignores every table row
+
+72. A page uses <font color="red"> for a warning. Which HTML5-friendly replacement is best?
+A. Use a meaningful element if needed and style it with CSS
+B. Use <meta color="red">
+C. Use <title color="red">
+D. Use <table bgcolor> for the entire page
+
+73. A developer writes <image src="logo.png"> expecting an image to appear. What is the correct element?
+A. <img src="logo.png" alt="Company logo">
+B. <picture src="logo.png"> only
+C. <src>logo.png</src>
+D. <media href="logo.png">
+
+74. A developer places a paragraph directly inside <table> without a cell. Why is this invalid structure?
+A. Table content must follow table-specific structure, typically rows and cells
+B. Paragraphs are forbidden in HTML5
+C. Tables cannot contain text at all
+D. p elements belong only in head
+
+75. A document uses <meta charset="UTF-8"> near the start of head. What does it specify?
+A. Character encoding
+B. The page's domain
+C. The server port
+D. The table's number of columns
+
+76. A mobile browser displays a desktop page zoomed out because the viewport meta tag is missing. Which declaration is commonly used for responsive layout?
+A. <meta name="viewport" content="width=device-width, initial-scale=1.0">
+B. <meta name="robots" content="zoom">
+C. <viewport width="mobile">
+D. <link rel="responsive">
+
+77. A developer writes <html lang="fr"> for a page whose primary language is English. What should be changed?
+A. Set lang to the primary language, such as en
+B. Change href to en
+C. Add lang to every character
+D. Remove the html element
+
+78. A page contains a list of ingredients where order does not matter. Which element is most appropriate?
+A. <ul>
+B. <ol>
+C. <table>
+D. <nav>
+
+79. A page describes a process with steps that must be completed in order. Which element best represents the steps?
+A. <ol>
+B. <ul>
+C. <aside>
+D. <footer>
+
+80. A developer wants a term and its definition to be grouped semantically. Which structure is most suitable?
+A. <dl> with <dt> and <dd>
+B. <table> with no cells
+C. <h1> and <img> only
+D. <nav> and <footer>
+
+81. A page has a footer containing copyright and contact information. Which element is most suitable?
+A. <footer>
+B. <main>
+C. <thead>
+D. <em>
+
+82. A developer uses <hr> between two unrelated topics. What is its semantic meaning in HTML?
+A. A thematic break between paragraph-level topics
+B. A hyperlink to a remote server
+C. A hidden heading
+D. A horizontal image file
+
+83. A page marks a date as <time datetime="2026-10-22">22 October 2026</time>. What benefit does datetime provide?
+A. Machine-readable date/time value
+B. It changes the date into a URL
+C. It encrypts the date
+D. It makes the element a heading
+
+84. A page highlights a search term that is relevant to the current context. Which element is semantically intended for such highlighting?
+A. <mark>
+B. <del>
+C. <small>
+D. <dfn>
+
+85. A developer uses <small> for a legal disclaimer. What does small generally represent?
+A. Side comments or small print, such as disclaimers or copyright
+B. A heading with the highest rank
+C. A secure connection
+D. A table row
+
+86. A heading appears visually too large, so a developer changes H2 to H5 even though the content is still a second-level section. What is the better fix?
+A. Keep H2 and adjust its visual style using CSS
+B. Change the document language
+C. Replace it with an image
+D. Put the heading in title
+
+87. A developer wants to embed a link inside a paragraph. Which statement is correct?
+A. An anchor can be used inline within a paragraph
+B. An anchor can only appear inside nav
+C. A paragraph cannot contain links
+D. Use img instead of a
+
+88. A site has separate pages for products and support. Which link design is most helpful for users and search engines?
+A. Descriptive links such as 'View product specifications' and 'Contact support'
+B. Every link labeled 'here'
+C. All links with empty href
+D. Links that contain only punctuation
+
+89. A developer sets alt="best cheap shoes running shoes buy shoes" on a shoe image to force rankings. What is the main problem?
+A. Keyword stuffing makes the alt text less useful; describe the image naturally
+B. Alt text must always contain at least ten keywords
+C. Alt text is used only for file size
+D. Images cannot have alt attributes
+
+90. A page includes <meta name="keywords" content="html, css, javascript"> and expects Google ranking to rise. What is the most accurate assessment?
+A. Google does not use the meta keywords tag as a ranking signal
+B. This guarantees first position
+C. The tag replaces page content
+D. The tag encrypts keywords
+
+91. A website needs to prevent search engines from indexing a specific page. Which meta robots directive is intended for this purpose when crawlers can access the page?
+A. <meta name="robots" content="noindex">
+B. <meta name="robots" content="index">
+C. <meta name="description" content="noindex">
+D. <title>noindex</title>
+
+92. A page is blocked from crawling in robots.txt and also contains a noindex meta tag. Why might the noindex directive not take effect?
+A. A blocked crawler may not fetch the page to read the meta directive
+B. robots.txt automatically inserts the title
+C. noindex works only inside img
+D. HTML cannot contain meta robots
+
+93. A site has duplicate or very similar pages and wants to signal the preferred URL. Which link element is commonly used?
+A. <link rel="canonical" href="https://example.com/preferred">
+B. <a rel="heading">
+C. <img rel="canonical">
+D. <meta name="viewport" content="canonical">
+
+94. A page's HTML title says 'Untitled Document' on every page. What is the strongest SEO improvement?
+A. Give each page a concise, descriptive, distinct title reflecting its content
+B. Add 100 meta keywords
+C. Remove all headings
+D. Place the title only in body
+
+95. A student says semantic HTML guarantees a page will rank first on Google. Which response is most defensible?
+A. Semantic HTML improves structure and accessibility but cannot guarantee ranking
+B. Every semantic tag adds ten ranking points
+C. Search engines do not process HTML
+D. Semantic HTML replaces useful content
+
+96. A page uses a table with no headers, captions, or labels, and screen-reader users struggle to interpret the data. Which revision is most helpful?
+A. Add meaningful header cells and a caption where appropriate
+B. Convert all text to bold
+C. Remove table rows
+D. Add a meta keywords tag
+
+97. A webpage has three independent sections: course details, instructor biography, and enrollment information. Which markup approach is most reasonable?
+A. Use meaningful sectioning elements and headings to reflect the content structure
+B. Put all content inside title
+C. Use only line breaks for every section
+D. Use img elements for the text
+
+98. A developer places a second <main> element in the same visible document to wrap a sidebar. What is the best correction?
+A. Use one main element for the dominant content and use aside or another suitable element for the sidebar
+B. Replace all elements with main
+C. Put main inside head
+D. Use main only for navigation links
+
+99. A table contains a multi-level header where a single scope attribute is insufficient to express all associations. Which HTML technique may be needed?
+A. Use header cell IDs and headers attributes to associate data cells with relevant headers
+B. Add alt text to every td
+C. Use the title tag in every cell
+D. Replace th with br
+
+100. A site shows a product image but also presents the product name as visible text immediately next to it. The image merely repeats that name. Which alt choice may be appropriate?
+A. Empty alt if the image is redundant or decorative in context
+B. Repeat the product name five times
+C. Put the URL in alt
+D. Omit the alt attribute in all cases
+
+101. A college is creating a website that students can access through a browser. Which option best describes the role of web technologies in this situation?
+A. They only control the physical computer hardware
+B. They enable browsers and web servers to exchange and present web content
+C. They replace the need for an internet connection
+D. They are used only to create images
+
+102. A team compares early websites that mostly displayed linked documents with modern platforms that support live collaboration and personalized feeds. What broad change does this illustrate?
+A. The web moved from mainly static information toward interactive, dynamic experiences
+B. The web stopped using browsers
+C. The internet became identical to HTML
+D. Websites no longer need servers
+
+103. A student types a website address into a browser. Which sequence best represents a typical client–server interaction?
+A. Server requests a page from the client, then the client stores the server
+B. Client sends a request to a server, and the server returns a response
+C. Browser converts the monitor into a server
+D. DNS writes the page's HTML content
+
+104. A shopping website shows product cards in the browser and checks stock levels using application logic connected to a database. Which pairing is most appropriate?
+A. Frontend: database queries; Backend: page colors only
+B. Frontend: user interface; Backend: server-side logic and data handling
+C. Frontend: web hosting; Backend: domain name
+D. Frontend: DNS; Backend: monitor resolution
+
+105. A local club website displays the same timetable to every visitor and changes only when its HTML file is manually updated. How is it best classified?
+A. Dynamic website
+B. Static website
+C. Database-driven application in every case
+D. Browser extension
+
+106. A university portal shows each student their own grades after login. Which feature most clearly makes it dynamic?
+A. Every visitor receives the same fixed HTML file
+B. The displayed content can be generated based on the user and stored data
+C. It has a domain name
+D. It uses a heading element
+
+107. A development team first interviews users, then plans page layouts, builds the site, tests it, publishes it, and fixes issues after launch. Which activity is most closely associated with the initial requirements stage?
+A. Collecting user needs and defining what the application must do
+B. Deploying the finished website to production
+C. Checking live server logs after launch
+D. Deleting the source code
+
+108. A web team has completed coding but has not yet checked mobile layouts, broken links, or form validation. Which lifecycle stage should happen before release?
+A. Requirements gathering
+B. Testing
+C. Domain registration
+D. Content brainstorming only
+
+109. A student opens a page in Chrome, Firefox, and Edge to check whether it works consistently. What are these applications primarily doing?
+A. Acting as web browsers that retrieve and display web content
+B. Hosting the website's database
+C. Registering the domain name
+D. Encrypting every file stored on the server
+
+110. A heading appears too far down the page, and a developer wants to inspect its HTML and temporarily change CSS in the browser. Which tool is most useful?
+A. Browser Developer Tools / Elements inspector
+B. Domain registrar dashboard
+C. Email inbox
+D. File compression utility
+
+111. A website sends login details over HTTPS rather than HTTP. What is the main benefit of HTTPS?
+A. It guarantees that the website has no bugs
+B. It encrypts data in transit using TLS and helps authenticate the server
+C. It makes DNS unnecessary
+D. It prevents all phishing attacks
+
+112. A user opens a product page and the browser retrieves information without intending to modify the server's data. Which HTTP method is most suitable?
+A. DELETE
+B. GET
+C. PUT
+D. POST
+
+113. An online registration form submits a new application record to the server. Which HTTP method is commonly used for this action?
+A. POST
+B. GET
+C. DELETE
+D. TRACE
+
+114. An administrator sends an API request to replace the details of an existing resource at a known URL. Which method most closely matches this intent?
+A. GET
+B. PUT
+C. DELETE
+D. OPTIONS
+
+115. A moderator removes an outdated announcement through an API. Which HTTP method best represents the intended operation?
+A. POST
+B. GET
+C. DELETE
+D. HEAD
+
+116. A student visits a valid page and the server successfully returns the requested content. Which status code family normally indicates success?
+A. 1xx
+B. 2xx
+C. 4xx
+D. 5xx
+
+117. A visitor follows an old bookmark to a page that no longer exists on the server. Which HTTP status code is the most typical response?
+A. 200 OK
+B. 301 Moved Permanently
+C. 404 Not Found
+D. 500 Internal Server Error
+
+118. A server crashes while processing a request due to an unexpected application error. Which response is most appropriate?
+A. 201 Created
+B. 400 Bad Request
+C. 500 Internal Server Error
+D. 304 Not Modified
+
+119. A developer investigates a failed page load and wants to understand what the browser sent and what the server returned. Which pair should they inspect?
+A. HTTP request and HTTP response
+B. Domain name and image alt text only
+C. TLD and heading level only
+D. CSS color and screen brightness
+
+120. A browser needs to find the IP address associated with example.edu before connecting to the website. Which service normally helps resolve the name?
+A. DNS
+B. HTML
+C. FTP only
+D. CSS
+
+121. A student sees the address portal.example.edu. Which part is the top-level domain (TLD)?
+A. portal
+B. example
+C. edu
+D. portal.example
+
+122. A user types https://shop.example.com/products?id=25#details into the address bar. What does the query parameter portion communicate?
+A. The protocol is always HTTP
+B. The id=25 value is additional information sent as part of the URL query
+C. The TLD is products
+D. The fragment replaces the domain
+
+123. A page at https://example.com/courses/week1.html links to ../images/logo.png. How is this link classified?
+A. Absolute URL, because it includes a scheme and domain
+B. Relative URL, because it is resolved from the current document's location
+C. A DNS record
+D. An HTTP status code
+
+124. A small student project needs a domain name and a place for its website files to be available online. Which statement correctly distinguishes these services?
+A. A domain identifies the site's address; web hosting stores and serves the site's files or application
+B. Hosting is the same as a TLD
+C. A domain stores all HTML files by itself
+D. A browser provides both services automatically
+
+125. A startup chooses shared hosting because its website is small and its budget is limited. What is a typical characteristic of shared hosting?
+A. The site uses an entire physical data centre exclusively
+B. Multiple customers' websites share server resources
+C. It never requires maintenance or security updates
+D. It cannot serve static pages
+
+126. A team registers a domain but visitors still cannot reach the website. The hosting account is active, but the domain's DNS records have not been configured correctly. What should the team do?
+A. Change every HTML heading to H1
+B. Configure the domain's DNS records to point to the hosting service as required
+C. Replace HTTPS with a relative URL
+D. Delete the website's images
+
+127. A developer creates a new HTML5 page. Which document declaration belongs at the beginning of a standard HTML5 document?
+A. <html5>
+B. <!DOCTYPE html>
+C. <doctype web>
+D. <head>
+
+128. A page needs a main page title, a paragraph, and emphasized words. Which set of HTML elements is appropriate?
+A. <h1>, <p>, and <em>
+B. <title>, <server>, and <database>
+C. <body>, <dns>, and <ip>
+D. <url>, <get>, and <post>
+
+129. A news website is being updated so that its layout is easier to understand for browsers, assistive technologies, and developers. Which option uses semantic HTML appropriately?
+A. Use <div> for every part regardless of meaning
+B. Use <header>, <nav>, <main>, and <footer> to describe page regions
+C. Use <b> as the page navigation system
+D. Use comments as visible headings
+
+130. A student wants a clickable link to another page, an image with alternative text, and a table with column headings. Which combination is most appropriate?
+A. <a>, <img alt="...">, and <table> with <th>
+B. <link>, <picture alt="...">, and <heading>
+C. <url>, <image-text>, and <columns>
+D. <href>, <photo>, and <td> only

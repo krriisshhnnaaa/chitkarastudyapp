@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Tests Dashboard - Chitkara University</title>
+  <link rel="stylesheet" href="animations/main.css">
+  <link rel="stylesheet" href="animations/backgrounds.css">
+  <link rel="stylesheet" href="animations/loginhero.css">
+  <style>
+    /* Main Dashboard Specific Styles */
+    .dashboard-nav {
+      background: rgba(22, 27, 34, 0.95);
+      border-bottom: 1px solid var(--card-border);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(10px);
+    }
+
+    .user-greeting {
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .user-greeting strong {
+      color: var(--accent-color);
+    }
+
+    .btn-logout {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 0.45rem 1rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-logout:hover {
+      background: rgba(211, 47, 47, 0.2);
+      border-color: var(--accent-color);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Dynamic Background -->
+  <div class="background-canvas"></div>
+  <div class="grid-overlay"></div>
+
+  <!-- Marquee Banner -->
+  <header class="marquee-container" role="banner">
+    <div class="marquee-content">
+      ★ CHITKARA UNIVERSITY PRACTICE TESTS ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      ★ CHITKARA UNIVERSITY PRACTICE TESTS ★ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      ★ CHITKARA UNIVERSITY PRACTICE TESTS ★
+    </div>
+  </header>
+
+  <!-- User Nav Bar -->
+  <nav class="dashboard-nav">
+    <div class="user-greeting" id="userGreeting">
+      Welcome, <strong id="studentNameDisplay">Student</strong>
+    </div>
+    <a href="index.html" class="btn-logout" onclick="logoutUser()">Log Out</a>
+  </nav>
+
+  <!-- Main Hero Content -->
+  <main class="heroes-container">
+    <div class="heroes-header">
+      <span class="brand-badge">Curriculum Modules</span>
+      <h1>Introduction To Web Technologies Tests</h1>
+      <p>Select any module below to begin your 26-question practice evaluation</p>
+    </div>
+
+    <div class="heroes-grid">
+
+      <!-- hero1 -->
+      <article class="hero-card" id="hero1" onclick="window.location.href='../testpages/test1/test.html'">
+        <div>
+          <span class="hero-badge">Module 1 &bull; 26 Questions</span>
+          <h2 class="hero-title">attempt IWT test 1 ?</h2>
+          <p class="hero-desc">
+            Static vs Dynamic Sites, Web vs Internet Architecture, Client vs Server Responsibilities, and Developer Tools.
+          </p>
+        </div>
+        <div class="hero-footer">
+          <span class="hero-meta">Questions 1 – 26</span>
+          <span class="hero-cta">Start Test &rarr;</span>
+        </div>
+      </article>
+
+      <!-- hero2 -->
+      <article class="hero-card" id="hero2" onclick="window.location.href='../testpages/test2/test.html'">
+        <div>
+          <span class="hero-badge">Module 2 &bull; 26 Questions</span>
+          <h2 class="hero-title">attempt IWT test 2 ?</h2>
+          <p class="hero-desc">
+            HTTP Status Codes, Caching &amp; Performance, Software Development Lifecycle, and Responsive Design Testing.
+          </p>
+        </div>
+        <div class="hero-footer">
+          <span class="hero-meta">Questions 27 – 52</span>
+          <span class="hero-cta">Start Test &rarr;</span>
+        </div>
+      </article>
+
+      <!-- hero3 -->
+      <article class="hero-card" id="hero3" onclick="window.location.href='../testpages/test3/test.html'">
+        <div>
+          <span class="hero-badge">Module 3 &bull; 26 Questions</span>
+          <h2 class="hero-title">attempt IWT test 3 ?</h2>
+          <p class="hero-desc">
+            HTML Semantics, Block vs Inline Elements, Data Tables, Accessible Image Alt Text, and Anchor Links.
+          </p>
+        </div>
+        <div class="hero-footer">
+          <span class="hero-meta">Questions 53 – 78</span>
+          <span class="hero-cta">Start Test &rarr;</span>
+        </div>
+      </article>
+
+      <!-- hero4 -->
+      <article class="hero-card" id="hero4" onclick="window.location.href='../testpages/test4/test.html'">
+        <div>
+          <span class="hero-badge">Module 4 &bull; 26 Questions</span>
+          <h2 class="hero-title">attempt IWT test 4 ?</h2>
+          <p class="hero-desc">
+            Ordered/Unordered Lists, Definition Descriptions, SEO Best Practices, Robots Directives, and Canonical Links.
+          </p>
+        </div>
+        <div class="hero-footer">
+          <span class="hero-meta">Questions 79 – 104</span>
+          <span class="hero-cta">Start Test &rarr;</span>
+        </div>
+      </article>
+
+      <!-- hero5 -->
+      <article class="hero-card" id="hero5" onclick="window.location.href='../testpages/test5/test.html'">
+        <div>
+          <span class="hero-badge">Module 5 &bull; 26 Questions</span>
+          <h2 class="hero-title">attempt IWT test 5 ?</h2>
+          <p class="hero-desc">
+            Domain Name Systems (DNS), TLDs, HTTP Methods (GET, POST, PUT, DELETE), Hosting, and HTML5 DOCTYPE.
+          </p>
+        </div>
+        <div class="hero-footer">
+          <span class="hero-meta">Questions 105 – 130</span>
+          <span class="hero-cta">Start Test &rarr;</span>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="footer-note">
+    &copy; 2026 Chitkara University &bull; Practice Test Evaluation System
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Check authentication session
+      const student = JSON.parse(localStorage.getItem('chitkara_student') || 'null');
+      if (student && student.name) {
+        document.getElementById('studentNameDisplay').textContent = student.name;
+      }
+    });
+
+    function logoutUser() {
+      localStorage.removeItem('chitkara_student');
+    }
+  </script>
+</body>
+</html>

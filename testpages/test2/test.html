@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction To Web Technologies TEST-2 - Chitkara University</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+  <!-- Top Sticky Header Bar -->
+  <header class="test-header-bar">
+    <div class="test-title-section">
+      <h1>H1 : Introduction To Web Technologies TEST-2</h1>
+      <span class="subtitle">Chitkara University Practice Examination &bull; 26 Questions</span>
+    </div>
+    <div class="test-status-section">
+      <span class="status-badge" id="answeredCounter">Answered: 0 / 26</span>
+      <button type="button" class="btn-header-submit" onclick="submitTest()">Submit Test</button>
+    </div>
+  </header>
+
+  <!-- Test Content -->
+  <main class="test-container">
+    <form id="quizForm">
+      <!-- Question 1 -->
+      <div class="question-block" id="block-q1">
+        <div class="question-header">
+          <span class="question-number">question 1 :</span>
+          <span class="question-text">An API returns JSON with status 200. A student claims 200 means the data must be correct. Why is that conclusion invalid?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q1_a">
+            <input type="radio" id="q1_a" name="question 1" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">200 only indicates successful HTTP handling, not semantic correctness of every field</span>
+          </label>
+          <label class="option-label" for="q1_b">
+            <input type="radio" id="q1_b" name="question 1" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">JSON cannot be sent over HTTP</span>
+          </label>
+          <label class="option-label" for="q1_c">
+            <input type="radio" id="q1_c" name="question 1" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">200 means the server returned HTML</span>
+          </label>
+          <label class="option-label" for="q1_d">
+            <input type="radio" id="q1_d" name="question 1" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">Status codes validate database integrity</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question-block" id="block-q2">
+        <div class="question-header">
+          <span class="question-number">question 2 :</span>
+          <span class="question-text">A website uses HTTPS but has mixed-content warnings because it loads a script over HTTP. What is the concern?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q2_a">
+            <input type="radio" id="q2_a" name="question 2" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">The insecure script may be modified in transit and compromise the secure page</span>
+          </label>
+          <label class="option-label" for="q2_b">
+            <input type="radio" id="q2_b" name="question 2" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">HTTP scripts always load faster</span>
+          </label>
+          <label class="option-label" for="q2_c">
+            <input type="radio" id="q2_c" name="question 2" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">DNS stops working when a page contains JavaScript</span>
+          </label>
+          <label class="option-label" for="q2_d">
+            <input type="radio" id="q2_d" name="question 2" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">The page&#x27;s H1 becomes invalid</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question-block" id="block-q3">
+        <div class="question-header">
+          <span class="question-number">question 3 :</span>
+          <span class="question-text">A browser sends a request containing Host: example.com. Why is the Host information useful when multiple websites share one IP address?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q3_a">
+            <input type="radio" id="q3_a" name="question 3" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">It tells the server which hostname/resource site is being requested</span>
+          </label>
+          <label class="option-label" for="q3_b">
+            <input type="radio" id="q3_b" name="question 3" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">It encrypts the request body</span>
+          </label>
+          <label class="option-label" for="q3_c">
+            <input type="radio" id="q3_c" name="question 3" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">It substitutes for DNS permanently</span>
+          </label>
+          <label class="option-label" for="q3_d">
+            <input type="radio" id="q3_d" name="question 3" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">It guarantees a 200 response</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question-block" id="block-q4">
+        <div class="question-header">
+          <span class="question-number">question 4 :</span>
+          <span class="question-text">A web app is being tested at 320px viewport width. Which DevTools feature best helps evaluate mobile layout behavior?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q4_a">
+            <input type="radio" id="q4_a" name="question 4" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">Device toolbar/responsive design mode</span>
+          </label>
+          <label class="option-label" for="q4_b">
+            <input type="radio" id="q4_b" name="question 4" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">DNS cache flush only</span>
+          </label>
+          <label class="option-label" for="q4_c">
+            <input type="radio" id="q4_c" name="question 4" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">Server access log only</span>
+          </label>
+          <label class="option-label" for="q4_d">
+            <input type="radio" id="q4_d" name="question 4" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">Certificate issuer list</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="question-block" id="block-q5">
+        <div class="question-header">
+          <span class="question-number">question 5 :</span>
+          <span class="question-text">A browser sends repeated requests for a file whose response includes a valid cache validator. Which HTTP mechanism can allow the server to reply that the cached representation is still valid?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q5_a">
+            <input type="radio" id="q5_a" name="question 5" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">Conditional request with ETag/If-None-Match</span>
+          </label>
+          <label class="option-label" for="q5_b">
+            <input type="radio" id="q5_b" name="question 5" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">H1 heading</span>
+          </label>
+          <label class="option-label" for="q5_c">
+            <input type="radio" id="q5_c" name="question 5" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">DNS CNAME only</span>
+          </label>
+          <label class="option-label" for="q5_d">
+            <input type="radio" id="q5_d" name="question 5" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">HTML alt attribute</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 6 -->
+      <div class="question-block" id="block-q6">
+        <div class="question-header">
+          <span class="question-number">question 6 :</span>
+          <span class="question-text">A team deploys a new site. Which lifecycle sequence is most sensible?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q6_a">
+            <input type="radio" id="q6_a" name="question 6" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">Maintenance → requirements → testing → design</span>
+          </label>
+          <label class="option-label" for="q6_b">
+            <input type="radio" id="q6_b" name="question 6" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">Requirements/planning → design → implementation → testing → deployment → maintenance</span>
+          </label>
+          <label class="option-label" for="q6_c">
+            <input type="radio" id="q6_c" name="question 6" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">Deployment → requirements → implementation → design</span>
+          </label>
+          <label class="option-label" for="q6_d">
+            <input type="radio" id="q6_d" name="question 6" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">Testing → maintenance → requirements only</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 7 -->
+      <div class="question-block" id="block-q7">
+        <div class="question-header">
+          <span class="question-number">question 7 :</span>
+          <span class="question-text">A feature works on the developer&#x27;s laptop but fails in production. Which lifecycle activity should have helped identify environment-specific differences before release?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q7_a">
+            <input type="radio" id="q7_a" name="question 7" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">Testing in representative environments</span>
+          </label>
+          <label class="option-label" for="q7_b">
+            <input type="radio" id="q7_b" name="question 7" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">Writing more H1 tags</span>
+          </label>
+          <label class="option-label" for="q7_c">
+            <input type="radio" id="q7_c" name="question 7" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">Registering a second domain only</span>
+          </label>
+          <label class="option-label" for="q7_d">
+            <input type="radio" id="q7_d" name="question 7" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">Removing all server logs</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 8 -->
+      <div class="question-block" id="block-q8">
+        <div class="question-header">
+          <span class="question-number">question 8 :</span>
+          <span class="question-text">A team collects user requirements only after the entire site is deployed. Which risk is most likely?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q8_a">
+            <input type="radio" id="q8_a" name="question 8" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">The delivered product may not meet actual user needs</span>
+          </label>
+          <label class="option-label" for="q8_b">
+            <input type="radio" id="q8_b" name="question 8" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">DNS will become encrypted automatically</span>
+          </label>
+          <label class="option-label" for="q8_c">
+            <input type="radio" id="q8_c" name="question 8" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">All HTML becomes static</span>
+          </label>
+          <label class="option-label" for="q8_d">
+            <input type="radio" id="q8_d" name="question 8" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">Browsers will stop supporting HTTP</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 9 -->
+      <div class="question-block" id="block-q9">
+        <div class="question-header">
+          <span class="question-number">question 9 :</span>
+          <span class="question-text">A page uses a large hero image, many scripts, and render-blocking stylesheets. Users report slow initial display. Which response best fits web performance work?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q9_a">
+            <input type="radio" id="q9_a" name="question 9" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">Measure load behavior in DevTools and optimize critical resources</span>
+          </label>
+          <label class="option-label" for="q9_b">
+            <input type="radio" id="q9_b" name="question 9" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">Add more nested tables</span>
+          </label>
+          <label class="option-label" for="q9_c">
+            <input type="radio" id="q9_c" name="question 9" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">Put the entire page title in the URL fragment</span>
+          </label>
+          <label class="option-label" for="q9_d">
+            <input type="radio" id="q9_d" name="question 9" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">Disable all semantic tags</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 10 -->
+      <div class="question-block" id="block-q10">
+        <div class="question-header">
+          <span class="question-number">question 10 :</span>
+          <span class="question-text">A browser&#x27;s address bar shows a padlock for a website. What does this generally indicate?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q10_a">
+            <input type="radio" id="q10_a" name="question 10" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">The connection has passed the browser&#x27;s applicable HTTPS security checks</span>
+          </label>
+          <label class="option-label" for="q10_b">
+            <input type="radio" id="q10_b" name="question 10" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">The website is guaranteed to be factually accurate</span>
+          </label>
+          <label class="option-label" for="q10_c">
+            <input type="radio" id="q10_c" name="question 10" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">The domain is owned by a government</span>
+          </label>
+          <label class="option-label" for="q10_d">
+            <input type="radio" id="q10_d" name="question 10" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">The server has no vulnerabilities</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 11 -->
+      <div class="question-block" id="block-q11">
+        <div class="question-header">
+          <span class="question-number">question 11 :</span>
+          <span class="question-text">A user clicks a link and the browser first needs the IP address for the hostname. Which answer correctly describes DNS&#x27;s role?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q11_a">
+            <input type="radio" id="q11_a" name="question 11" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">It resolves names to records; it does not normally transmit the page&#x27;s full content</span>
+          </label>
+          <label class="option-label" for="q11_b">
+            <input type="radio" id="q11_b" name="question 11" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">It renders CSS</span>
+          </label>
+          <label class="option-label" for="q11_c">
+            <input type="radio" id="q11_c" name="question 11" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">It runs backend business logic</span>
+          </label>
+          <label class="option-label" for="q11_d">
+            <input type="radio" id="q11_d" name="question 11" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">It defines HTML semantics</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 12 -->
+      <div class="question-block" id="block-q12">
+        <div class="question-header">
+          <span class="question-number">question 12 :</span>
+          <span class="question-text">A page&#x27;s HTML includes &lt;title&gt; but no visible H1. Which statement is most accurate?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q12_a">
+            <input type="radio" id="q12_a" name="question 12" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">The title and H1 serve different purposes; a visible main heading can still improve content structure</span>
+          </label>
+          <label class="option-label" for="q12_b">
+            <input type="radio" id="q12_b" name="question 12" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">The page cannot render</span>
+          </label>
+          <label class="option-label" for="q12_c">
+            <input type="radio" id="q12_c" name="question 12" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">The browser automatically converts title into an H1</span>
+          </label>
+          <label class="option-label" for="q12_d">
+            <input type="radio" id="q12_d" name="question 12" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">HTML5 requires every page to have exactly six H1 tags</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 13 -->
+      <div class="question-block" id="block-q13">
+        <div class="question-header">
+          <span class="question-number">question 13 :</span>
+          <span class="question-text">A document begins with &lt;!DOCTYPE html&gt;. What is its primary purpose in modern HTML?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q13_a">
+            <input type="radio" id="q13_a" name="question 13" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">It declares the document as HTML and helps trigger standards mode</span>
+          </label>
+          <label class="option-label" for="q13_b">
+            <input type="radio" id="q13_b" name="question 13" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">It inserts the page title</span>
+          </label>
+          <label class="option-label" for="q13_c">
+            <input type="radio" id="q13_c" name="question 13" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">It connects the domain to DNS</span>
+          </label>
+          <label class="option-label" for="q13_d">
+            <input type="radio" id="q13_d" name="question 13" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">It encrypts page content</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 14 -->
+      <div class="question-block" id="block-q14">
+        <div class="question-header">
+          <span class="question-number">question 14 :</span>
+          <span class="question-text">A developer places visible page content inside &lt;head&gt;. Why is this generally incorrect?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q14_a">
+            <input type="radio" id="q14_a" name="question 14" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">Head is for document metadata and resource references; visible page content belongs in body</span>
+          </label>
+          <label class="option-label" for="q14_b">
+            <input type="radio" id="q14_b" name="question 14" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">Head can contain only JavaScript comments</span>
+          </label>
+          <label class="option-label" for="q14_c">
+            <input type="radio" id="q14_c" name="question 14" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">Body is reserved for CSS</span>
+          </label>
+          <label class="option-label" for="q14_d">
+            <input type="radio" id="q14_d" name="question 14" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">Browsers never parse head elements</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 15 -->
+      <div class="question-block" id="block-q15">
+        <div class="question-header">
+          <span class="question-number">question 15 :</span>
+          <span class="question-text">An HTML document omits &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; tags, yet the browser still displays it. Which explanation is best?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q15_a">
+            <input type="radio" id="q15_a" name="question 15" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">HTML parsers can infer certain omitted tags, but explicit structure is clearer and more robust</span>
+          </label>
+          <label class="option-label" for="q15_b">
+            <input type="radio" id="q15_b" name="question 15" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">HTML requires no document structure</span>
+          </label>
+          <label class="option-label" for="q15_c">
+            <input type="radio" id="q15_c" name="question 15" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">The browser is actually rendering a PDF</span>
+          </label>
+          <label class="option-label" for="q15_d">
+            <input type="radio" id="q15_d" name="question 15" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">The tags are inserted by DNS</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 16 -->
+      <div class="question-block" id="block-q16">
+        <div class="question-header">
+          <span class="question-number">question 16 :</span>
+          <span class="question-text">A developer uses &lt;b&gt; for every important sentence and &lt;strong&gt; only for decoration. Which semantic correction is best?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q16_a">
+            <input type="radio" id="q16_a" name="question 16" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">&lt;strong&gt; conveys strong importance; &lt;b&gt; draws attention without adding the same importance meaning</span>
+          </label>
+          <label class="option-label" for="q16_b">
+            <input type="radio" id="q16_b" name="question 16" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">&lt;b&gt; is a hyperlink and &lt;strong&gt; is a table</span>
+          </label>
+          <label class="option-label" for="q16_c">
+            <input type="radio" id="q16_c" name="question 16" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">They are both obsolete and forbidden</span>
+          </label>
+          <label class="option-label" for="q16_d">
+            <input type="radio" id="q16_d" name="question 16" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">&lt;strong&gt; always changes text to red</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 17 -->
+      <div class="question-block" id="block-q17">
+        <div class="question-header">
+          <span class="question-number">question 17 :</span>
+          <span class="question-text">A paragraph contains a scientific term that needs emphasis in speech, not merely visual italics. Which element is the more semantic choice?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q17_a">
+            <input type="radio" id="q17_a" name="question 17" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">&lt;i&gt;</span>
+          </label>
+          <label class="option-label" for="q17_b">
+            <input type="radio" id="q17_b" name="question 17" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">&lt;em&gt;</span>
+          </label>
+          <label class="option-label" for="q17_c">
+            <input type="radio" id="q17_c" name="question 17" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">&lt;small&gt;</span>
+          </label>
+          <label class="option-label" for="q17_d">
+            <input type="radio" id="q17_d" name="question 17" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">&lt;del&gt;</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 18 -->
+      <div class="question-block" id="block-q18">
+        <div class="question-header">
+          <span class="question-number">question 18 :</span>
+          <span class="question-text">A page uses &lt;i&gt; for a foreign phrase or technical term without intending stress emphasis. Is that necessarily invalid?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q18_a">
+            <input type="radio" id="q18_a" name="question 18" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">Yes; i is forbidden in HTML5</span>
+          </label>
+          <label class="option-label" for="q18_b">
+            <input type="radio" id="q18_b" name="question 18" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">No; i can mark text in an alternate voice or mood, or otherwise set apart from prose</span>
+          </label>
+          <label class="option-label" for="q18_c">
+            <input type="radio" id="q18_c" name="question 18" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">Yes; only images can be inside paragraphs</span>
+          </label>
+          <label class="option-label" for="q18_d">
+            <input type="radio" id="q18_d" name="question 18" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">No; i always means importance</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 19 -->
+      <div class="question-block" id="block-q19">
+        <div class="question-header">
+          <span class="question-number">question 19 :</span>
+          <span class="question-text">A writer needs to show text that was removed from a revised policy and text inserted in its place. Which pair is most suitable?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q19_a">
+            <input type="radio" id="q19_a" name="question 19" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">&lt;del&gt; and &lt;ins&gt;</span>
+          </label>
+          <label class="option-label" for="q19_b">
+            <input type="radio" id="q19_b" name="question 19" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">&lt;small&gt; and &lt;big&gt;</span>
+          </label>
+          <label class="option-label" for="q19_c">
+            <input type="radio" id="q19_c" name="question 19" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">&lt;em&gt; and &lt;i&gt;</span>
+          </label>
+          <label class="option-label" for="q19_d">
+            <input type="radio" id="q19_d" name="question 19" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">&lt;head&gt; and &lt;footer&gt;</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 20 -->
+      <div class="question-block" id="block-q20">
+        <div class="question-header">
+          <span class="question-number">question 20 :</span>
+          <span class="question-text">A page has a main heading, two section headings, and several subsections. Which hierarchy is most appropriate?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q20_a">
+            <input type="radio" id="q20_a" name="question 20" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">Use heading levels to reflect nested section structure rather than choosing levels only by visual size</span>
+          </label>
+          <label class="option-label" for="q20_b">
+            <input type="radio" id="q20_b" name="question 20" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">Use H6 for the main heading because it is smallest</span>
+          </label>
+          <label class="option-label" for="q20_c">
+            <input type="radio" id="q20_c" name="question 20" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">Use headings only to change font size</span>
+          </label>
+          <label class="option-label" for="q20_d">
+            <input type="radio" id="q20_d" name="question 20" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">Replace all headings with bold paragraphs</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 21 -->
+      <div class="question-block" id="block-q21">
+        <div class="question-header">
+          <span class="question-number">question 21 :</span>
+          <span class="question-text">A content editor places an H4 immediately after H1 only because H4 looks smaller. What is the primary issue?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q21_a">
+            <input type="radio" id="q21_a" name="question 21" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">The heading hierarchy may not reflect the logical content structure</span>
+          </label>
+          <label class="option-label" for="q21_b">
+            <input type="radio" id="q21_b" name="question 21" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">H4 cannot appear in body</span>
+          </label>
+          <label class="option-label" for="q21_c">
+            <input type="radio" id="q21_c" name="question 21" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">H1 is only valid in the head</span>
+          </label>
+          <label class="option-label" for="q21_d">
+            <input type="radio" id="q21_d" name="question 21" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">Headings cannot be styled</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 22 -->
+      <div class="question-block" id="block-q22">
+        <div class="question-header">
+          <span class="question-number">question 22 :</span>
+          <span class="question-text">A developer needs a generic container for a short phrase inside a paragraph, with no special semantic meaning. Which element is suitable?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q22_a">
+            <input type="radio" id="q22_a" name="question 22" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">&lt;span&gt;</span>
+          </label>
+          <label class="option-label" for="q22_b">
+            <input type="radio" id="q22_b" name="question 22" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">&lt;article&gt;</span>
+          </label>
+          <label class="option-label" for="q22_c">
+            <input type="radio" id="q22_c" name="question 22" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">&lt;nav&gt;</span>
+          </label>
+          <label class="option-label" for="q22_d">
+            <input type="radio" id="q22_d" name="question 22" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">&lt;main&gt;</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 23 -->
+      <div class="question-block" id="block-q23">
+        <div class="question-header">
+          <span class="question-number">question 23 :</span>
+          <span class="question-text">A developer wraps a self-contained blog post that could be distributed independently. Which semantic element is the best fit?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q23_a">
+            <input type="radio" id="q23_a" name="question 23" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">&lt;article&gt;</span>
+          </label>
+          <label class="option-label" for="q23_b">
+            <input type="radio" id="q23_b" name="question 23" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">&lt;span&gt;</span>
+          </label>
+          <label class="option-label" for="q23_c">
+            <input type="radio" id="q23_c" name="question 23" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">&lt;br&gt;</span>
+          </label>
+          <label class="option-label" for="q23_d">
+            <input type="radio" id="q23_d" name="question 23" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">&lt;title&gt;</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 24 -->
+      <div class="question-block" id="block-q24">
+        <div class="question-header">
+          <span class="question-number">question 24 :</span>
+          <span class="question-text">A page has one central content area and several navigation links. Which element should identify the dominant unique content of the document?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q24_a">
+            <input type="radio" id="q24_a" name="question 24" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">&lt;main&gt;</span>
+          </label>
+          <label class="option-label" for="q24_b">
+            <input type="radio" id="q24_b" name="question 24" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">&lt;aside&gt;</span>
+          </label>
+          <label class="option-label" for="q24_c">
+            <input type="radio" id="q24_c" name="question 24" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">&lt;small&gt;</span>
+          </label>
+          <label class="option-label" for="q24_d">
+            <input type="radio" id="q24_d" name="question 24" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">&lt;mark&gt;</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 25 -->
+      <div class="question-block" id="block-q25">
+        <div class="question-header">
+          <span class="question-number">question 25 :</span>
+          <span class="question-text">A sidebar contains related links and a short note that is tangential to the article. Which element may be appropriate?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q25_a">
+            <input type="radio" id="q25_a" name="question 25" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">&lt;aside&gt;</span>
+          </label>
+          <label class="option-label" for="q25_b">
+            <input type="radio" id="q25_b" name="question 25" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">&lt;main&gt;</span>
+          </label>
+          <label class="option-label" for="q25_c">
+            <input type="radio" id="q25_c" name="question 25" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">&lt;title&gt;</span>
+          </label>
+          <label class="option-label" for="q25_d">
+            <input type="radio" id="q25_d" name="question 25" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">&lt;strong&gt;</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Question 26 -->
+      <div class="question-block" id="block-q26">
+        <div class="question-header">
+          <span class="question-number">question 26 :</span>
+          <span class="question-text">A page has a group of links used for primary site navigation. Which element best conveys this purpose?</span>
+        </div>
+        <div class="options-group">
+          <label class="option-label" for="q26_a">
+            <input type="radio" id="q26_a" name="question 26" value="A">
+            <span class="option-marker">(a)</span>
+            <span class="option-text">&lt;nav&gt;</span>
+          </label>
+          <label class="option-label" for="q26_b">
+            <input type="radio" id="q26_b" name="question 26" value="B">
+            <span class="option-marker">(b)</span>
+            <span class="option-text">&lt;section&gt; for every individual link</span>
+          </label>
+          <label class="option-label" for="q26_c">
+            <input type="radio" id="q26_c" name="question 26" value="C">
+            <span class="option-marker">(c)</span>
+            <span class="option-text">&lt;em&gt;</span>
+          </label>
+          <label class="option-label" for="q26_d">
+            <input type="radio" id="q26_d" name="question 26" value="D">
+            <span class="option-marker">(d)</span>
+            <span class="option-text">&lt;caption&gt;</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Bottom Submission Banner -->
+      <div class="submit-area">
+        <h2>Ready to complete TEST-2?</h2>
+        <p style="color: var(--text-muted); margin: 0.5rem 0 1.5rem 0;">Make sure you have reviewed all 26 questions before submitting your response.</p>
+        <button type="button" class="btn-big-submit" onclick="submitTest()">Submit Test &amp; Calculate Score</button>
+      </div>
+    </form>
+  </main>
+
+  <script src="test.js"></script>
+</body>
+</html>

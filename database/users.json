@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Krishnan G",
+    "email": "krishnang@chitkara.edu.in",
+    "registeredAt": "2026-10-22T18:00:00.000Z"
+  },
+  {
+    "name": "Student",
+    "email": "student@chitkara.edu.in",
+    "registeredAt": "2026-10-22T18:00:00.000Z"
+  }
+,
+  {
+    "name": "Test User",
+    "email": "testuser@chitkara.edu.in",
+    "registeredAt": "2026-10-22T13:09:46Z"
+  }
+]

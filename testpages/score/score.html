@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Evaluation &amp; Results - Chitkara University</title>
+  <link rel="stylesheet" href="score.css">
+</head>
+<body>
+
+  <!-- Score Navigation Bar -->
+  <header class="score-header-bar">
+    <h1 id="testTitleHeading">Introduction To Web Technologies Test Result</h1>
+    <a href="../../landingpage/index.html" class="btn-action btn-secondary">Exit to Portal</a>
+  </header>
+
+  <main class="score-container">
+    
+    <!-- Hero Score Summary Card -->
+    <div class="score-hero-card">
+      <div id="statusBadge" class="score-badge badge-passed">Evaluated</div>
+      <div class="score-digits" id="marksDisplay">0 <span>/ 26</span></div>
+      <div class="score-percentage" id="percentageDisplay">0% Score</div>
+
+      <div class="score-meta-grid">
+        <div class="meta-box">
+          <div class="meta-label">Student</div>
+          <div class="meta-val" id="studentNameVal">Student</div>
+        </div>
+        <div class="meta-box">
+          <div class="meta-label">Submitted At</div>
+          <div class="meta-val" id="submissionTimeVal">--</div>
+        </div>
+        <div class="meta-box">
+          <div class="meta-label">Correct Answers</div>
+          <div class="meta-val" style="color: #3fb950;" id="correctCountVal">0 Correct</div>
+        </div>
+        <div class="meta-box">
+          <div class="meta-label">Incorrect / Blank</div>
+          <div class="meta-val" style="color: #ff5252;" id="incorrectCountVal">0 Incorrect</div>
+        </div>
+      </div>
+
+      <div class="score-actions">
+        <a id="retakeBtn" href="#" class="btn-action btn-secondary">&#x21bb; Retake Test</a>
+        <button id="downloadJsonBtn" type="button" class="btn-action btn-secondary">&#x2913; Download response.json</button>
+        <a id="nextTestBtn" href="#" class="btn-action btn-primary">Proceed to Next Test &rarr;</a>
+      </div>
+    </div>
+
+    <!-- Question by Question Review -->
+    <section class="breakdown-section">
+      <h2>Question Breakdown &amp; Performance Review</h2>
+      <div id="breakdownList">
+        <!-- Rendered dynamically by score.js -->
+      </div>
+    </section>
+
+  </main>
+
+  <script src="score.js"></script>
+</body>
+</html>

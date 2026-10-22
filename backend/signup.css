@@ -1,0 +1,15 @@
+/* Backend / Admin Portal Styles */
+.signup-wrapper {
+  max-width: 480px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  color: #f0f6fc;
+}
+
+.signup-wrapper h2 {
+  color: #ff5252;
+  margin-bottom: 1.5rem;
+}
